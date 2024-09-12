@@ -207,6 +207,7 @@ USER $USER
 #install dependencies for python interface
 USER root
 RUN apt-get update && apt-get install -y pip
+RUN apt-get update && apt-get install -y libnlopt*
 USER $USER
 
 RUN pip install scipy
